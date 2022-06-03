@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  docker_desktop:
+    build: ./
+    image: docker_desktop
+    container_name: docker_desktop
+    privileged: true
+    tty: true
+    ports:
+      - 13389:3389
+    volumes:
+      - ./files/:/home/${USER}/Public/
+    command: /sbin/init
