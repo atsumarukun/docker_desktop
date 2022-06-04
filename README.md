@@ -48,3 +48,8 @@ $ docker-compose exec docker_desktop bash
 
 - ArchLinux
 - docker 20.10.16
+<br></br>
+
+## 情報
+
+タグより他のデスクトップ環境を選択可能
