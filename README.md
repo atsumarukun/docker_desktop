@@ -39,6 +39,10 @@ $ docker-compose exec docker_desktop bash
 ~~~
 <br></br>
 
+### ファイルの共有先
+- host: files/
+- container: ~/Public
+
 ## 作成環境
 
 - ArchLinux
