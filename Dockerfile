@@ -7,8 +7,9 @@ ARG VERSION=4.16
 
 RUN apt update && apt -y install tzdata
 ENV TZ=Asia/Tokyo
+ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt -y install init xrdp xfce4=${VERSION} sudo && \
+RUN apt -y install init xrdp xfce4 sudo && \
     echo root:${ROOT_PASS} | chpasswd && \
     useradd -m ${USER} && \
     echo ${USER}:${USER_PASS} | chpasswd && \
